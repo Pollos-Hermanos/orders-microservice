@@ -12,3 +12,12 @@
 docker run -d --name nats-server -p 4222:4222 -p 8222:8222 nats 
 ```
 7. Ejecutar `npm run start:dev`
+
+# Prod
+
+1. Clonar el repositorio
+2. Crear el `.env` basado en el `.env.template`
+3. Ejecutar el comando
+```
+docker compose -f docker-compose.prod.yml build
+```
